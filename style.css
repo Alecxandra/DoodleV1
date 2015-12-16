@@ -1,0 +1,97 @@
+body{
+   margin: 0px;
+   padding: 0px;
+   overflow: hidden;
+   background: #009cb8;
+}
+button{
+   margin-top: 10px;
+   margin-left: 8px;
+   padding: 12px;
+   border: solid 0px;
+   background: white;
+   font-family: sans-serif;
+   color: #505050;
+   cursor: pointer;
+}
+.fan{
+   width: 300px;
+   position: fixed;
+   top: 100px;
+   left: 150px;
+}
+.petal{
+   height: 300px;
+   width: 50px;
+   background:#FF1744; 
+   position: absolute;
+   border-top-right-radius: 80px;
+   border-top-left-radius: 0px;
+   border-bottom-left-radius: 80px;
+   z-index: 10;
+   left: 50%;
+   top: 50%;
+   transition: all 10s ease;
+}
+.petal:nth-child(2){
+   z-index: 4;
+   background: #64DD17;
+   transform: rotate(-45deg);
+}
+.petal:nth-child(3){
+   z-index: 3;
+   background: #FF3D00;
+   transform: rotate(45deg);
+}
+.dot{
+   width: 20px;
+   height: 20px;
+   background: #E1BEE7;
+   z-index: 1000;
+   top: 243px;
+   border-radius: 100%;
+   position: absolute;
+   left: 315px;
+   box-shadow: 2px 1px 12px rgba(0,0,0,0.3);
+}
+.stick{
+   width: 8px;
+   height: 100%;
+   position: absolute;
+   background: #5E35B1;
+   top: 270px;
+   left: 322px;
+   z-index: -1;
+}
+.wind{
+   width: 120px;
+   height: 4px;
+   opacity: 0.0;
+   background: white;
+   position: absolute;
+   left: 150px;
+   top: 230px;
+   border-radius: 100%;
+   transform: rotate(-20deg);
+   transition: all 1.0s ease;
+}
+.wind::after{
+   content:"";
+   width: 10px;
+   height: 10px;
+   position: absolute;
+   right:0px;
+   background: transparent;
+   border: white 2px solid;
+   border-radius: 100%;
+   top: -10px;
+}
+.two{
+   top: 260px;
+}
+.three{
+   top: 270px;
+}
+.four{
+   top: 280px;
+}
